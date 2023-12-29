@@ -1,0 +1,20 @@
+body{
+    background-color: #F5F9F9;
+    /* background-size: cover; */
+}
+
+.login{
+    width:100vw;
+    height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+
+ /* Set background image path here */
+ background-color:#F0FFFF;
+ /* Adjust background image properties as needed */
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center center;
+ /* Add other styles if necessary */
+}
