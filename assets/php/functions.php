@@ -277,10 +277,11 @@ function showFormData($field){
 //for checking duplicate email
 function isEmailRegistered($email){
     global $db;
-    $query="SELECT count(*) as row FROM users WHERE email='$email'";
-    $run=mysqli_query($db,$query);
-    $return_data = mysqli_fetch_assoc($run);
-    return $return_data['row'];
+    $query = "SELECT count(*) as total FROM users WHERE email='$email'";
+$run = mysqli_query($db, $query);
+$return_data = mysqli_fetch_assoc($run);
+return $return_data['total'];
+
 }
 
 //for checking duplicate username

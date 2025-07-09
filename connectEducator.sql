@@ -122,7 +122,7 @@ CREATE TABLE `users` (
   `email` varchar(255) NOT NULL,
   `username` varchar(255) NOT NULL,
   `password` text NOT NULL,
-  `profile_pic` text NOT NULL DEFAULT 'default_profile.jpg',
+  `profile_pic` VARCHAR(255) NOT NULL DEFAULT 'default_profile.jpg',
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
   `updated_at` timestamp NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   `ac_status` int(11) NOT NULL COMMENT '0=not verified,1=active,2=blocked'
