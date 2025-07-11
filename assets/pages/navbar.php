@@ -1,21 +1,31 @@
 <style>
+
+ :root {
+            --primary-color: #4361ee;
+            --secondary-color: #3f37c9;
+            --accent-color: #4895ef;
+            --light-color: #f8f9fa;
+            --dark-color: #212529;
+            --danger-color: #ef233c;
+        }
+
 .dark-blue-background {
-  background-color: #1379E5; /* Replace with your preferred dark blue color */
+     background-color: var(--primary-color);
 }
 
 .dark-blue-background .navbar-nav .dropdown-item {
   display: inline-block;
   padding: 0.5rem 1rem;
   margin: 0.2rem;
-  color: #fff; /* Replace with your preferred text color */
+  color: var(--light-color);
   border: 1px solid transparent;
   border-radius: 0.25rem;
   text-decoration: none;
 }
 
 .dark-blue-background .navbar-nav .dropdown-item:hover {
-  background-color: #0d47a1; /* Replace with your preferred button hover color */
-  border-color: #0d47a1; /* Replace with your preferred button hover border color */
+     background-color: var(--secondary-color);
+  border-color:var(--secondary-color);
 }
     </style>
 <?php global $user;?>
@@ -53,7 +63,7 @@
                 </li>
                 <li class="nav-item">
                     
-                    <a class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#addpost" href="#">Upload</a>
+                    <a class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#addpost" href="#">Create Post</a>
                 </li>
                 <li class="nav-item">
                   
@@ -83,8 +93,8 @@
   
                         </span></a>
                        </li>
-                         <li><a class="dropdown-item" href="?u=<?=$user['username']?>"></i> My Profile</a></li>
-                        <li><a class="dropdown-item" href="?editprofile"> Edit My Profile</a></li>
+                         <li><a class="dropdown-item" href="?u=<?=$user['username']?>"></i>Profile</a></li>
+                        <li><a class="dropdown-item" href="?editprofile"> Account</a></li>
 
 
                        
