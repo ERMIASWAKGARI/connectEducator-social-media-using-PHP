@@ -27,6 +27,7 @@
      background-color: var(--secondary-color);
   border-color:var(--secondary-color);
 }
+    
     </style>
 <?php global $user;?>
 
