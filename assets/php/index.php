@@ -82,9 +82,6 @@ if(isset($_SESSION['Auth']) && $user['ac_status']==1 && !$pagecount){
 showPage('footer');
 unset($_SESSION['error']);
 unset($_SESSION['formdata']);
-s
-
-
 
 
 

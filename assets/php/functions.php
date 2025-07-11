@@ -736,7 +736,5 @@ $user_id = $_SESSION['userdata']['id'];
     return mysqli_query($db,$query);
    }
 
-   // for getting posts
-
    
 ?>
